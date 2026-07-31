@@ -1,6 +1,52 @@
-/* En tu styles.css */
+:root {
+    --bg-dark: #0d1117;
+    --bg-card: #161b22;
+    --accent: #39ff88;
+    --text-main: #c9d1d9;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1, h2, h3, .navbar-brand {
+    color: var(--accent);
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--accent);
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+.badge-dev {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+
 .foto-perfil {
     width: 150px;
     height: 150px;
     object-fit: cover;
+}
+
+.navbar-dev {
+    background-color: var(--bg-card);
+    border-bottom: 2px solid var(--accent);
+}
+
+.navbar-dev .nav-link {
+    color: var(--text-main);
+}
+
+.navbar-dev .nav-link:hover {
+    color: var(--accent);
 }
